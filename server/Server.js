@@ -220,7 +220,7 @@ export default class Server {
     this._serverUp = true;
     this._exposedServer.listen(this._port, _ => {
       console.log("Server listening at localhost:" + this._port);
-    });
+    }, process.env.IP);
 
     if (!this._appServerUp) {
       if (fs.existsSync(appServerPath)) fs.unlinkSync(appServerPath);

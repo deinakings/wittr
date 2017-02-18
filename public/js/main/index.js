@@ -4,6 +4,7 @@ import IndexController from './IndexController';
 const polyfillsNeeded = [];
 
 if (!('Promise' in self)) polyfillsNeeded.push('/js/polyfills/promise.js');
+if (!('fetch' in self)) polyfillsNeeded.push('/js/polyfills/fetch.js');
 
 try {
   new URL('b', 'http://a');

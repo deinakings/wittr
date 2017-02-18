@@ -78,6 +78,7 @@ function bundle(b, outputPath) {
 var jsBundles = {
   'js/polyfills/promise.js': createBundle('./public/js/polyfills/promise.js'),
   'js/polyfills/url.js': createBundle('./public/js/polyfills/url.js'),
+  'js/polyfills/fetch.js': createBundle('./public/js/polyfills/fetch.js'),
   'js/settings.js': createBundle('./public/js/settings/index.js'),
   'js/main.js': createBundle('./public/js/main/index.js'),
   'js/remote-executor.js': createBundle('./public/js/remote-executor/index.js'),
